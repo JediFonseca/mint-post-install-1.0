@@ -50,3 +50,4 @@ zenity --info --title=Warning --text="We'll now install 'Oh My Zshell', and then
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i 's/bash/zsh/g' /etc/passwd
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' /home/"$USER"/.zshrc
+zenity --info --title="Mint Post Install 1.0" --text="Installation complete." --width=200 --height=100
