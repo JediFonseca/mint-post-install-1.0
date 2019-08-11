@@ -45,7 +45,7 @@ wget https://www.softmaker.net/down/softmaker-office-2018_966-01_amd64.deb
 
 sudo rm -r /home/"$USER"/Downloads/mint-post-install
 
-zenity --info --title=Warning --text="We'll now install 'Oh My Zshell', and then:\n\n1-To finish installing 'Protontricks' close and re-open the terminal, then run: 'pipx install protontricks'.\n2-To finish installing Jack, Ardour, some audio plugins, and 'Oh My Zshell', please reboot your system.\n3-Ubuntu Font Familly, Paper Icon Theme, 4k Video Downloader and Softmaker Office are available for installation on your 'Downloads' folder.\n\nIMPORTANT: Once the installation is finished please DO NOT close the terminal. Type 'exit', press 'Enter', and then you may close it." --width=600 --height=200
+zenity --info --title="Mint Post Install 1.0 - Warning!" --text="We'll now install 'Oh My Zshell', and then:\n\n1-To finish installing 'Protontricks' close and re-open the terminal, then run: 'pipx install protontricks'.\n2-To finish installing Jack, Ardour, some audio plugins, and 'Oh My Zshell', please reboot your system.\n3-Ubuntu Font Familly, Paper Icon Theme, 4k Video Downloader and Softmaker Office are available for installation on your 'Downloads' folder.\n\nIMPORTANT: Once the installation is finished please DO NOT close the terminal. Type 'exit', press 'Enter', and then you may close it." --width=600 --height=200
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i 's/bash/zsh/g' /etc/passwd
