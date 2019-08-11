@@ -23,7 +23,7 @@ libldap-2.4-2:i386, libgpg-error0:i386, libxml2:i386, libasound2-plugins:i386, l
 libdbus-1-3:i386, gparted, virtualbox, devede, soundkonverter, snapd, gimp, tilix, build-essential,
 ubuntu-restricted-extras, python3-pip, python3-setuptools, python3-venv, woeusb, ukuu, indicator-cpufreq, gdebi-core,
 wget, apt-transport-https, libglibmm-2.4-1v5, zsh, fonts-powerline, ardour, qjackctl, pipx, calf-plugins,
-fil-plugins, so-synth-lv2, swh-lv2, tap-plugins, synthv1, zynaddsubfx, yoshimi, amsynth, hydrogen (flatpak),
+fil-plugins, so-synth-lv2, swh-lv2, tap-plugins, synthv1, zynaddsubfx, yoshimi, amsynth, hydrogen (flatpak), neofetch,
 protontricks, oh-my-zshell, JediF-Dark-Theme.
 
 It also configures ZSH as default, and Oh-My-Zshell with the 'Agnoster' theme. Installs and configures JackAudio.
