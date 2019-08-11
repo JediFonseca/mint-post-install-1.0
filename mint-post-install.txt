@@ -32,7 +32,7 @@ mkdir /home/"$USER"/.icons
 mkdir /home/"$USER"/.fonts
 cd JediF-Dark-Theme
 tar xvzf JediF-Dark-Theme.tar.gz
-mv -r JediF-Dark-Theme /home/"$USER"/.themes
+cp -r JediF-Dark-Theme /home/"$USER"/.themes
 flatpak install flathub org.hydrogenmusic.Hydrogen -y
 
 cd /home/"$USER"/Downloads
@@ -41,7 +41,7 @@ wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
 wget https://dl.4kdownload.com/app/4kvideodownloader_4.8.2-1_amd64.deb?source=website
 wget https://www.softmaker.net/down/softmaker-office-2018_966-01_amd64.deb
 
-cp -r /home/"$USER"/Downloads/mint-post-install
+sudo rm -r /home/"$USER"/Downloads/mint-post-install
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i 's/bash/zsh/g' /etc/passwd
