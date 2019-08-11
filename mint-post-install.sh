@@ -18,7 +18,7 @@ python3 -m pip install --user pipx
 
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.5.1~kxstudio3_all.deb
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
-sudo gdebi kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
+sudo gdebi -n kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 sudo apt update
 sudo apt install ardour qjackctl -y
 sudo echo -e "@realtime - rtprio 99\n@realtime - memlock unlimited" > /etc/security/limits.d/99-realtime.conf
@@ -45,7 +45,7 @@ wget https://www.softmaker.net/down/softmaker-office-2018_966-01_amd64.deb
 
 sudo rm -r /home/"$USER"/Downloads/mint-post-install
 
-zenity --info --title="Mint Post Install 1.0 - Warning" --text="We'll now install 'Oh My Zshell', and then:\n\n1-To finish installing 'Protontricks' close and re-open the terminal, then run: 'pipx install protontricks'.\n2-To finish installing Jack, Ardour, some audio plugins, and 'Oh My Zshell', please reboot your system.\n3-Ubuntu Font Familly, Paper Icon Theme, 4k Video Downloader and Softmaker Office are available for installation on your 'Downloads' folder.\n\nIMPORTANT: Once the installation is finished please DO NOT close the terminal. Type 'exit', press 'Enter', wait for the "Installation Complete" notification and then you may close it." --width=600 --height=200
+zenity --info --title="Mint Post Install 1.0 - Warning" --text="We'll now install 'Oh My Zshell', and then:\n\n1-To finish installing 'Protontricks' close and re-open the terminal, then run: 'pipx install protontricks'.\n2-To finish installing Jack, Ardour, some audio plugins, and 'Oh My Zshell', please reboot your system.\n3-Ubuntu Font Familly, Paper Icon Theme, 4k Video Downloader and Softmaker Office are available for installation on your 'Downloads' folder.\n\nIMPORTANT: Once the installation is finished please DO NOT close the terminal. Type 'exit', press 'Enter', wait for the 'Installation Complete' notification and then you may close it." --width=600 --height=200
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i 's/bash/zsh/g' /etc/passwd
