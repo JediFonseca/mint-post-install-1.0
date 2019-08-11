@@ -1,4 +1,4 @@
-# mint-post-install-1.0
+# Mint Post Install 1.0
 
 DO NOT RUN THIS SCRIPT AS ROOT
 
