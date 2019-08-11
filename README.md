@@ -7,7 +7,7 @@ It'll probably work on any ubuntu-based distro, and of course on Ubuntu itself.
 
 What does the script do?
 
-Like I said before, the script was made for my personal use, so it installs pretty much everythins I need
+Like I said before, the script was made for my personal use, so it installs pretty much everything I need
 on my system, so it may not attend to your needs.
 
 PPA's/Repositories:
