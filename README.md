@@ -1,7 +1,7 @@
 # mint-post-install-1.0
 
 Post-install script for Linux Mint 19.x made by me for personal use. Yet if you find it useful, feel free to use it
-the way you like. The script was made to be used on Linux Mint 19.x, and since Linux Mint is Ubuntu-based,
+as you see fit. The script was made to be used on Linux Mint 19.x, and since Linux Mint is Ubuntu-based,
 It'll probably work on any ubuntu-based distro, and of course on Ubuntu itself.
 
 
