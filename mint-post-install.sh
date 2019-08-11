@@ -3,6 +3,7 @@
 mkdir /home/"$USER"/Downloads/mint-post-install
 cd /home/"$USER"/Downloads/mint-post-install
 
+sudo apt remove thunderbird rhythmbox xplayer
 sudo apt install software-properties-common
 
 sudo add-apt-repository ppa:lutris-team/lutris -y
