@@ -16,7 +16,7 @@ python3 -m pip install --user pipx
 
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.5.1~kxstudio3_all.deb
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
-sudo gdebi kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb -y
+sudo gdebi kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 sudo apt update
 sudo apt install ardour qjackctl -y
 sudo echo -e "@realtime - rtprio 99\n@realtime - memlock unlimited" > /etc/security/limits.d/99-realtime.conf
