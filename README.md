@@ -4,10 +4,6 @@ Post-install script for Linux Mint 19.x made by me for personal use. Yet if you 
 the way you like. The script was made to be used on Linux Mint 19.x, and since Linux Mint is Ubuntu-based,
 It'll probably work on any ubuntu-based distro, and of course on Ubuntu itself.
 
-What do I need in order to use this script?
-The only pre-requisite on most distros is 'software-properties-common', which is installed by default on
-most Ubuntu-based distros, except for 'Elementary OS' for what I know.
-
 
 What does the script do?
 
