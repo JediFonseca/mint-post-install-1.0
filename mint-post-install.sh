@@ -3,6 +3,8 @@
 mkdir /home/"$USER"/Downloads/mint-post-install
 cd /home/"$USER"/Downloads/mint-post-install
 
+sudo apt install software-properties-common
+
 sudo add-apt-repository ppa:lutris-team/lutris -y
 sudo add-apt-repository ppa:nilarimogard/webupd8 -y
 sudo apt-add-repository ppa:teejee2008/ppa -y
