@@ -24,10 +24,6 @@ sudo usermod -a -G realtime "$USER"
 sudo apt install calf-plugins fil-plugins so-synth-lv2 swh-lv2 tap-plugins synthv1 zynaddsubfx yoshimi amsynth -y
 rm kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb -y
 
-sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo sed -i 's/bash/zsh/g' /etc/passwd
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' /home/"$USER"/.zshrc
-
 git clone https://github.com/JediFonseca/JediF-Dark-Theme.git
 wget https://flathub.org/repo/appstream/org.hydrogenmusic.Hydrogen.flatpakref
 mkdir /home/"$USER"/.themes
@@ -38,8 +34,6 @@ tar xvzf JediF-Dark-Theme.tar.gz
 mv -r JediF-Dark-Theme /home/"$USER"/.themes
 flatpak install flathub org.hydrogenmusic.Hydrogen -y
 
-
-
 cd /home/"$USER"/Downloads
 git clone https://github.com/snwh/paper-icon-theme.git
 wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
@@ -47,5 +41,9 @@ wget https://dl.4kdownload.com/app/4kvideodownloader_4.8.2-1_amd64.deb?source=we
 wget https://www.softmaker.net/down/softmaker-office-2018_966-01_amd64.deb
 
 rm -r /home/"$USER"/Downloads/mint-post-install
+
+sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo sed -i 's/bash/zsh/g' /etc/passwd
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' /home/"$USER"/.zshrc
 
 echo -e "---IMPORTANT---\n1-To finish installing 'Protontricks' close and re-open the terminal, then run: 'pipx install protontricks'.\n2-To finish installing Jack, Ardour, some audio plugins, and 'Oh My Zshell', please reboot your system.\n3-Ubuntu Font Familly, Paper Icon Theme, 4k Video Downloader and Softmaker Office are available for installation on your 'Downloads' folder."
