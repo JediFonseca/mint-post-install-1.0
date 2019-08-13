@@ -100,7 +100,9 @@ sudo apt autoclean -y
 
 zenity --info --title="Mint Post Install 1.0 - Warning" --text="We'll now install 'Oh My Zshell'...\n\nOnce the installation is complete please DO NOT close the terminal. Type 'exit', press 'Enter', wait for the 'Installation Complete' notification and then you may close it.\n\nIn order to install 'protontricks' close and re-open the Terminal, then run 'pipx install protontricks'.\n\nAfter you see the 'Installation Complete' notification, please reboot your system."  --width=600 --height=100
 
-###OH MY ZSHELL###
+#############################
+###INSTALLING OH MY ZSHELL###
+#############################
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo sed -i 's/bash/zsh/g' /etc/passwd
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' /home/"$USER"/.zshrc
