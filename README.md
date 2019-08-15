@@ -28,7 +28,7 @@ ubuntu-restricted-extras, python3-pip, python3-setuptools, python3-venv, woeusb,
 wget, apt-transport-https, libglibmm-2.4-1v5, zsh, fonts-powerline, ardour, qjackctl, pipx, calf-plugins,
 fil-plugins, so-synth-lv2, swh-lv2, tap-plugins, synthv1, zynaddsubfx, yoshimi, amsynth, hydrogen (flatpak), neofetch,
 protontricks, oh-my-zshell, JediF-Dark-Theme, warsaw, spotify-client, 4kvideodownloader, softmaker-office, paper-icon-theme,
-pavucontrol, breeze-cursor-theme, git, software-properties-common.
+pavucontrol, breeze-cursor-theme, git, software-properties-common, balena-etcher-electron.
 
 It also configures ZSH as default, and Oh-My-Zshell with the 'Agnoster' theme. Installs and configures JackAudio.
 
