@@ -20,7 +20,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 
 sudo apt update
 
-sudo apt install neofetch zenity zenity-common wine-stable libwine libwine-development wine64 wine64-development winetricks fonts-wine ttf-mscorefonts-installer mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 libvulkan1:i386 wine32-development vulkan-utils synaptic audacity kdenlive inkscape steam lutris libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 gparted virtualbox devede soundkonverter snapd tilix build-essential ubuntu-restricted-extras python3-pip python3-setuptools python3-venv woeusb ukuu indicator-cpufreq gdebi-core wget apt-transport-https libglibmm-2.4-1v5 zsh fonts-powerline spotify-client pavucontrol breeze-cursor-theme git balena-etcher-electron -y
+sudo apt install vlc neofetch zenity zenity-common wine-stable libwine libwine-development wine64 wine64-development winetricks fonts-wine ttf-mscorefonts-installer mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 libvulkan1:i386 wine32-development vulkan-utils synaptic audacity kdenlive inkscape steam lutris libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 gparted virtualbox devede soundkonverter snapd tilix build-essential ubuntu-restricted-extras python3-pip python3-setuptools python3-venv woeusb ukuu indicator-cpufreq gdebi-core wget apt-transport-https libglibmm-2.4-1v5 zsh fonts-powerline spotify-client pavucontrol breeze-cursor-theme git balena-etcher-electron -y
 
 python3 -m pip install --user pipx
 ~/.local/bin/pipx ensurepath
