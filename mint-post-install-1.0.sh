@@ -47,6 +47,7 @@ wget https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 flatpak install flathub org.hydrogenmusic.Hydrogen -y
 flatpak install flathub org.gimp.GIMP -y
 
+mkdir /home/"$USER"/.local/share/icons
 mkdir /home/"$USER"/.themes
 mkdir /home/"$USER"/.icons
 mkdir /home/"$USER"/.fonts
