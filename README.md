@@ -19,7 +19,7 @@ New PPA's/Repositories:
 ppa:lutris-team/lutris, ppa:nilarimogard/webupd8, ppa:teejee2008/ppa, KXStudio Repositories.
 
 New Packages:
-wine-stable, libwine, libwine-development, wine64, wine64-development, winetricks, fonts-wine,
+vlc, wine-stable, libwine, libwine-development, wine64, wine64-development, winetricks, fonts-wine,
 ttf-mscorefonts-installer, mesa-vulkan-drivers, mesa-vulkan-drivers:i386, libvulkan1, libvulkan1:i386,
 wine32-development, vulkan-utils, synaptic, audacity, kdenlive, inkscape, steam, lutris, libgnutls30:i386,
 libldap-2.4-2:i386, libgpg-error0:i386, libxml2:i386, libasound2-plugins:i386, libsdl2-2.0-0:i386, libfreetype6:i386,
