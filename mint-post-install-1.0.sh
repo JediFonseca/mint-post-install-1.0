@@ -28,16 +28,18 @@ python3 -m pip install --user pipx
 ###################################################
 ###INSTALLING KXSTUDIO REPOS+ARDOUR+JACK+PLUGINS###
 ###################################################
+sudo apt install libglibmm-2.4-1v5
+wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.5.1~kxstudio3_all.deb
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
-sudo gdebi -n kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
+sudo gdebi -n kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 sudo apt update
 sudo apt install ardour qjackctl -y
 sudo echo -e "@realtime - rtprio 99\n@realtime - memlock unlimited" > /etc/security/limits.d/99-realtime.conf
 sudo groupadd realtime
 sudo usermod -a -G realtime "$USER"
 sudo apt install calf-plugins fil-plugins so-synth-lv2 swh-lv2 tap-plugins synthv1 zynaddsubfx yoshimi amsynth -y
-sudo rm kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
+sudo rm kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 
 #################################################
 ###INSTALLING FLATPAK PACKAGES - HYDROGEN+GIMP###
