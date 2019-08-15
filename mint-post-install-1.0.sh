@@ -25,9 +25,6 @@ sudo apt install neofetch zenity zenity-common wine-stable libwine libwine-devel
 python3 -m pip install --user pipx
 ~/.local/bin/pipx ensurepath
 
-cp -r /usr/share/icons/breeze_cursors /home/"$USER"/.icons
-cp -r /usr/share/icons/breeze_cursors /home/"$USER"/.local/share/icons
-
 ###################################################
 ###INSTALLING KXSTUDIO REPOS+ARDOUR+JACK+PLUGINS###
 ###################################################
@@ -53,6 +50,9 @@ flatpak install flathub org.gimp.GIMP -y
 mkdir /home/"$USER"/.themes
 mkdir /home/"$USER"/.icons
 mkdir /home/"$USER"/.fonts
+
+cp -r /usr/share/icons/breeze_cursors /home/"$USER"/.icons
+cp -r /usr/share/icons/breeze_cursors /home/"$USER"/.local/share/icons
 
 #################################
 ###INSTALLING JEDIF-DARK-THEME###
