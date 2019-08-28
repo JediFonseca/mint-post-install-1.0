@@ -31,11 +31,12 @@ python3 -m pip install --user pipx
 sudo apt install libglibmm-2.4-1v5
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.5.1~kxstudio3_all.deb
-wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 sudo gdebi -n kxstudio-repos_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb kxstudio-repos-gcc5_9.5.1~kxstudio3_all.deb
 sudo apt update
 sudo apt install ardour qjackctl -y
-sudo echo -e "@realtime - rtprio 99\n@realtime - memlock unlimited" > /etc/security/limits.d/99-realtime.conf
+sudo su
+echo -e "@realtime - rtprio 99\n@realtime - memlock unlimited" > /etc/security/limits.d/99-realtime.conf
+exit
 sudo groupadd realtime
 sudo usermod -a -G realtime "$USER"
 sudo apt install calf-plugins fil-plugins so-synth-lv2 swh-lv2 tap-plugins synthv1 zynaddsubfx yoshimi amsynth -y
